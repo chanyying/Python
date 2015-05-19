@@ -9,6 +9,6 @@
 <h3>demo4.py</h3>
 <p>pass语句在Python中表示一个空的语句块。</p>
 <p>没有返回值的return语句等价于return None,如果没有return就相当于pass</p>
-<h5>demo5.py</h5>
+<h3>demo5.py</h3>
 <p>DocStrings.__doc__的使用，显示在程序中DocStrings函数下的文档流</p>
 <p>如果在函数内有文档流的信息，...之间，“.”号视为换行隔开，这样如果在函数内，使用函数.__doc__就会显示出函数三个点之间的文档流</p>
