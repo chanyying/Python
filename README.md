@@ -12,3 +12,8 @@
 <h3>demo5.py</h3>
 <p>DocStrings.__doc__的使用，显示在程序中DocStrings函数下的文档流</p>
 <p>如果在函数内有文档流的信息，...之间，“.”号视为换行隔开，这样如果在函数内，使用函数.__doc__就会显示出函数三个点之间的文档流</p>
+<h3>demo6.py</h3>
+如果你想要在其他程序中重用很多函数,demo6就讲到了怎样使用模块
+demo6写了一个简单的函数，当作模块使用，在demo6_2中用模块的方式去调用import
+在demo6_2中有两种方式，一种是import demo6直接引入，但是要使用demo6中的函数的时候需要，demo6.sayhi()的方式
+第二种是fromm demo6 import sayhi，在demo6中引入sayhi函数，fromm demo6 import sayhi，version就是引入这两个，如果需要引入全部，import *
