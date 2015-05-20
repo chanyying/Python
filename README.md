@@ -1,5 +1,10 @@
 # Python-Flasky-api
 从配置环境开始，到一步一步写出api程序
+
+#函数：
+dir():返回模块定义的名称列表
+del:删除 一个变量/名称
+
 <h3>demo1.py</h3>
 一个简单的hello wolrd！实例程序
 <h3>demo2.py</h3>
