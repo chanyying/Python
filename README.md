@@ -22,3 +22,6 @@ del:删除 一个变量/名称
 demo6写了一个简单的函数，当作模块使用，在demo6_2中用模块的方式去调用import
 在demo6_2中有两种方式，一种是import demo6直接引入，但是要使用demo6中的函数的时候需要，demo6.sayhi()的方式
 第二种是fromm demo6 import sayhi，在demo6中引入sayhi函数，fromm demo6 import sayhi，version就是引入这两个，如果需要引入全部，import *
+# Data_structure
+在这个文件夹中主要讲解Python的数据结构：Python中有三种内建的数据结构——列表、元组和字典
+<h3>demo1.py</h3>
