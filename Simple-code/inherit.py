@@ -1,44 +1,41 @@
+#coding:utf-8
 #!/usr/bin/env python
 # Filename: inherit.py
 
-class SchoolMember:
-	'''Represents any school member.'''
-	def __init__(self,name,age):
-		self.name=name
-		self.age=age
-		print '(Initialized SchoolMember: %s)' %self.name
-	
-	def tell(self):
-		'''Tell my details.'''
-		print 'Name:"%s" Age:"%s"' %(self.name,self.age),
 
-class Teacher(SchoolMember):
-	'''Represents a teacher.'''
-	def __init__(self,name,age,salary):
-		SchoolMember.__init__(self,name,age)
-		self.salary=salary
-		print '(Initialized Teacher: %s)' %self.name
-	
-	def tell(self):
-		SchoolMember.tell(self)
-		print 'Salary: "%d"' %self.salary
 
-class Student(SchoolMember):
-	'''Represents a student.'''
-	def __init__(self,name,age,marks):
-		SchoolMember.__init__(self,name,age)
-		self.marks=marks
-		print '(Initialized Student: %s)' %self.name
-	
-	def tell(self):
-		SchoolMember.tell(self)
-		print 'Marks: "%d"' %self.marks
+#编写了一个名为Animal的class，有一个run()方法可以直接打印：
+class Animal:
+    def run(self):
+        print 'Animal is running...'
 
-t=Teacher('Mrs. Shrividya',40,30000)
-s=Student('Swaroop',22,75)
 
-print # prints a blank line
+# class Dog(Animal):
+#     pass
+# class Cat(Animal):
+#     pass
+# p=Animal().run()  打印出Animal的内容
+#这个时候如果单独调用Dog类，后面没有跟调用这个类的什么方法，所以为空
+# Dog()
+#因为在Dog的类参数里面调用了Animal类，所以可以直接调用Animal里面的函数，下边的例子就成功了
+# Dog().run()
 
-members=[t,s]
-for member in members:
-	member.tell() # works for both Teachers and Students
+
+class Dog(Animal):
+    def run(self):
+        print 'Dog is running...'
+    def eat(self):
+        print 'Eating meat...'
+
+#在Dog类当中继承Animal类，并添加新方法,这个时候如果调用这个run()函数，就会执行Dog类的run函数，覆盖了Animal类的run了，这就是多态性
+# Dog().run()
+
+class Tortoise(Animal):
+    def run(self):
+        print 'Tortoise is running slowly...'
+
+def run_twice(animal):
+    animal.run()
+    animal.run()
+
+run_twice(Tortoise())
