@@ -1,23 +1,12 @@
+#coding:utf-8
 #!/usr/bin/env python
 # Filename: using_file.py
 
-poem='''\
-Programming is fun
-When the work is done
-if you wanna make your work also fun:
-	use Python!
+text = '''\
+你好
 '''
 
-f=file('poem.txt','w') # open for 'w'riting
-f.write(poem) # write text to file
-f.close() # close the file
+f=file('my.txt','w')#用write写的权限，创建一个文件
+f.write(text)#在创建的my.txt文件中写入text文档进去
 
-f=file('poem.txt')
-# if no mode is specified, 'r'ead mode is assumed by default
-while True:
-	line=f.readline()
-	if len(line)==0: # Zero length indicates EOF
-		break
-	print line,
-	# Notice comma to avoid automatic newline added by Python
-f.close() # close the file
+
