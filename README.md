@@ -83,3 +83,9 @@
 
 <h3>inherit.py</h3>
 >一个函数可以没有参数的调用，但是在类之下定义的函数必须有一个参数，不然： sayHi() takes no arguments (1 given)，如果在没有参数的情况下，写self
+
+<h3>using_file.py</h3>
+>使用file函数创建一个文件，然后用创建的文件的write方式写入一个文本在创建的文件内
+
+<h3>read_fileText.py</h3>
+>这里同样用到了using_file.py文件中创建文件的file函数，但是没有指定参数方式，file如果没有指定参数方式就是默认的读取方式，读取这个文件，如果是ture就使用readline函数读取这个文件的每一行，然后进行判断，如果为空酒break返回，否则打印出文件的内容
