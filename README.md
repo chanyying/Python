@@ -89,3 +89,6 @@
 
 <h3>read_fileText.py</h3>
 >这里同样用到了using_file.py文件中创建文件的file函数，但是没有指定参数方式，file如果没有指定参数方式就是默认的读取方式，读取这个文件，如果是ture就使用readline函数读取这个文件的每一行，然后进行判断，如果为空酒break返回，否则打印出文件的内容
+
+<h3>pickling.py</h3>
+>这个文件里面讲解了，储存器和pickle模块的使用，还有import...as...的使用。
